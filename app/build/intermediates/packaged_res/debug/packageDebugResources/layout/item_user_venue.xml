@@ -1,0 +1,52 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Helyszín képe -->
+        <ImageView
+            android:id="@+id/imageVenue"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Helyszín képe"/>
+
+        <!-- Helyszín neve -->
+        <TextView
+            android:id="@+id/textVenueName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helyszín neve"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+
+
+        <!-- Törlés gomb -->
+        <Button
+            android:id="@+id/buttonDeleteVenue"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:padding="8dp"
+            android:text="Törlés"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonEditVenue"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:text="Módosítás" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

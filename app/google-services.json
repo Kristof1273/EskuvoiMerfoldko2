@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "853113672438",
+    "project_id": "eskuvoihelyszinlefoglaloapp",
+    "storage_bucket": "eskuvoihelyszinlefoglaloapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853113672438:android:5979cc6273f0ef70ec52d7",
+        "android_client_info": {
+          "package_name": "com.example.eskuvoihelyszinlefoglaloapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853113672438-1qnmdd7a8keeca4jvaspv8vv6ah3ptsq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eskuvoihelyszinlefoglaloapp",
+            "certificate_hash": "571fb6146385713e2e6e8d5d1cc74888293aac7d"
+          }
+        },
+        {
+          "client_id": "853113672438-j4p05a4f57q6jl3edqrrg6j3ri6f5i4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDthrzhTKkuYHhl0X2yTwbM-D_7oHpyi90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853113672438-j4p05a4f57q6jl3edqrrg6j3ri6f5i4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

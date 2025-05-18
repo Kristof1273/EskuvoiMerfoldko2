@@ -9,11 +9,6 @@ import android.os.IBinder;
 import androidx.core.app.NotificationCompat;
 
 public class NotificationService extends Service {
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        sendNotification();
-        return START_STICKY; // 🔹 Biztosítja, hogy a szolgáltatás ne álljon le
-    }
 
     @Override
     public void onCreate() {

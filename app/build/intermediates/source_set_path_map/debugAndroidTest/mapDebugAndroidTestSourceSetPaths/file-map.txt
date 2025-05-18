@@ -1,0 +1,5 @@
+com.example.eskuvoihelyszinlefoglaloapp.test.app-core-1.6.1-0 C:\Users\Kristóf\.gradle\caches\8.11.1\transforms\85e001fdcdc7e9645df868c84612ba38\transformed\core-1.6.1\res
+com.example.eskuvoihelyszinlefoglaloapp.test.app-androidTest-1 D:\EskuvoiHelyszinlefoglaloApp\app\build\generated\res\resValues\androidTest\debug
+com.example.eskuvoihelyszinlefoglaloapp.test.app-mergeDebugAndroidTestResources-2 D:\EskuvoiHelyszinlefoglaloApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.eskuvoihelyszinlefoglaloapp.test.app-mergeDebugAndroidTestResources-3 D:\EskuvoiHelyszinlefoglaloApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.eskuvoihelyszinlefoglaloapp.test.app-debugAndroidTest-4 D:\EskuvoiHelyszinlefoglaloApp\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

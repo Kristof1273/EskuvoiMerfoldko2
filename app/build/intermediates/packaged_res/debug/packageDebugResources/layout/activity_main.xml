@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Helyszínek böngészése gomb -->
+    <Button
+        android:id="@+id/btnVenues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Helyszínek böngészése"
+        android:onClick="navigate_to_venues"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Regisztráció gomb -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regisztráció"
+        android:onClick="navigate_to_register"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Bejelentkezés gomb -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bejelentkezés"
+        android:onClick="navigate_to_login"/>
+
+</LinearLayout>
