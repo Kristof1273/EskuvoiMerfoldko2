@@ -1,0 +1,11 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUserVenues"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Felhasználó saját hirdetett helyszínei"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

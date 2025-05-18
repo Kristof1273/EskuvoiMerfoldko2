@@ -1,0 +1,60 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editVenueName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Helyszín neve"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/editVenueLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Helyszín címe"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/editVenueName"/>
+
+    <!-- 🔹 Helyszín képe -->
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Kiválasztott helyszín képe"
+        app:layout_constraintTop_toBottomOf="@id/editVenueLocation"/>
+
+    <!-- 🔹 Gombok a képfeltöltéshez és fotókészítéshez -->
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kép kiválasztása a galériából"
+        app:layout_constraintTop_toBottomOf="@id/imagePreview"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/buttonTakePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fotó készítése"
+        app:layout_constraintTop_toBottomOf="@id/buttonSelectImage"/>
+
+    <Button
+        android:id="@+id/buttonSaveVenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mentés"
+        app:layout_constraintTop_toBottomOf="@id/buttonTakePhoto"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

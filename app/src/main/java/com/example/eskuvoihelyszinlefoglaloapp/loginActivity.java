@@ -27,6 +27,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
 public class loginActivity extends AppCompatActivity {
@@ -69,19 +70,25 @@ public class loginActivity extends AppCompatActivity {
         String emailStr = edtEmail.getText().toString();
         String passwordStr = edtPassword.getText().toString();
 
-        mAuth.signInWithEmailAndPassword(emailStr, passwordStr).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    Log.d(LOG_TAG, "Login successful");
+        mAuth.signInWithEmailAndPassword(emailStr, passwordStr).addOnCompleteListener(this, task -> {
+            if (task.isSuccessful()) {
+                FirebaseUser currentUser = mAuth.getCurrentUser();
+                if (currentUser != null) {
+                    Log.d(LOG_TAG, "Bejelentkezés sikeres, user ID: " + currentUser.getUid());
+
+                    // 🔹 Felhasználói adat mentése SharedPreferences-be
+                    SharedPreferences preferences = getSharedPreferences("UserData", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("userId", currentUser.getUid());
+                    editor.apply();
+
                     navigate_to_venues(view);
-                } else {
-                    Log.d(LOG_TAG, "Login unsuccessful");
-                    Toast.makeText(loginActivity.this, "Login unsuccessful" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
+            } else {
+                Log.e(LOG_TAG, "Bejelentkezés sikertelen: " + task.getException().getMessage());
+                Toast.makeText(loginActivity.this, "Bejelentkezés sikertelen: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
     public void guest_login(View view) {

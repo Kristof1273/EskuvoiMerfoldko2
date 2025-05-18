@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EskuvoiHelyszinlefoglaloApp</string>
+    <string name="email">Email</string>
+    <string name="jelsz">Jelszó</string>
+    <string name="jelszo">jelszo</string>
+    <string name="Regisztráció">Regisztráció</string>
+    <string name="username">username</string>
+    <string name="Felhasználónév">Felhasználónév</string>
+    <string name="Email">Email</string>
+    <string name="Jelszó">Jelszó</string>
+    <string-array name="sort_options">
+        <item>Név szerint növekvő</item>
+        <item>Név szerint csökkenő</item>
+    </string-array>
+
+</resources>
